@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Dashboard</title>
+<title>Profile</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Dashboard" />
@@ -120,32 +120,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <h1><a class="navbar-brand" href="admin.html"><span class="fa fa-area-chart"></span>FRAME<span class="dashboard_text">Design dashboard</span></a></h1>
+            <h1><a class="navbar-brand" href="user-profile.html"><span class="fa fa-area-chart"></span>FRAME<span class="dashboard_text">Design dashboard</span></a></h1>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="sidebar-menu">
               <li class="header">MAIN NAVIGATION</li>
               <li class="treeview">
-                <a href="admin.html">
-                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                <a href="user-profile.html">
+                <i class="fa fa-user"></i>
+                <span>Profile</span>
                 </a>
               </li>
               </li>
               <li class="treeview">
-                <a href="charts.html">
-                <i class="fa fa-pie-chart"></i>
-                <span>Charts</span>
-                <span class="label label-primary pull-right">new</span>
+                <a href="user-avatar.html">
+                <i class="fa fa-camera"></i>
+                <span>Upload Avatar</span>
                 </a>
               </li>
               <li class="treeview">
-                <a href="#">
-                <i class="fa fa-table"></i> <span>Tables</span>
-                <i class="fa fa-angle-left pull-right"></i>
+                <a href="user-password.html">
+                <i class="fa fa-unlock-alt"></i>
+                <span>Change Password</span>
                 </a>
-                <ul class="treeview-menu">
-                  <li><a href="tables.html"><i class="fa fa-angle-right"></i> Simple tables</a></li>
-                </ul>
+              </li>
+              <li class="treeview">
+                <a href="user-info.html">
+                <i class="fa fa-info-circle"></i>
+                <span>Change User Information</span>
+                </a>
+              </li>
+              <li class="treeview">
+                <a href="user-history.html">
+                <i class="fa fa-history"></i>
+                <span>Purcharge History</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -182,8 +191,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div class="profile_img">	
 									<span class="prfil-img"><img src="images/user.png" alt=""> </span> 
 									<div class="user-name">
-										<p>Admin Name</p>
-										<span>Administrator</span>
+										<p>Hi, Member!</p>
 									</div>
 									<i class="fa fa-angle-down lnr"></i>
 									<i class="fa fa-angle-up lnr"></i>
@@ -191,10 +199,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>	
 							</a>
 							<ul class="dropdown-menu drp-mnu">
-								<li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li> 
-								<li> <a href="#"><i class="fa fa-user"></i> My Account</a> </li> 
-								<li> <a href="#"><i class="fa fa-suitcase"></i> Profile</a> </li> 
-								<li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+								<li> <a href="member.html"><i class="fa fa-home"></i> Index</a> </li>  
+								<li> <a href=""><i class="fa fa-suitcase"></i> Open Cart</a> </li> 
+								<li> <a href="index.html"><i class="fa fa-sign-out"></i> Logout</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -204,300 +211,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="clearfix"> </div>	
 		</div>
 		<!-- //header-ends -->
-		<!-- main content start-->
-		<div id="page-wrapper">
-			<div class="main-page">
-			<div class="col_3">
-        	<div class="col-md-3 widget widget1">
-        		<div class="r3_counter_box">
-                    <i class="pull-left fa fa-dollar icon-rounded"></i>
-                    <div class="stats">
-                      <h5><strong>$452</strong></h5>
-                      <span>Total Revenue</span>
+        <!-- main content start-->
+        <div id="page-wrapper">
+            <div class="main-page">
+                <div class="form">
+                    <div class="form-group">
+                        <label for="old-avatar">Your old avatar</label><p></p>
+                        <img src="images/img1.png" class="img-thumbnail" alt="Avatar" id="old-avatar">
+                    </div>
+                    <div class="form-group">
+                        <label for="avatar-upload">Choose a new image from your computer</label>
+                        <input type="file" name="Avatar" id="avatar-upload">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-lg float-right">Upload</button>
                     </div>
                 </div>
-        	</div>
-        	<div class="col-md-3 widget widget1">
-        		<div class="r3_counter_box">
-                    <i class="pull-left fa fa-laptop user1 icon-rounded"></i>
-                    <div class="stats">
-                      <h5><strong>$1019</strong></h5>
-                      <span>Online Revenue</span>
-                    </div>
-                </div>
-        	</div>
-        	<div class="col-md-3 widget widget1">
-        		<div class="r3_counter_box">
-                    <i class="pull-left fa fa-money user2 icon-rounded"></i>
-                    <div class="stats">
-                      <h5><strong>$1012</strong></h5>
-                      <span>Expenses</span>
-                    </div>
-                </div>
-        	</div>
-        	<div class="col-md-3 widget widget1">
-        		<div class="r3_counter_box">
-                    <i class="pull-left fa fa-pie-chart dollar1 icon-rounded"></i>
-                    <div class="stats">
-                      <h5><strong>$450</strong></h5>
-                      <span>Expenditure</span>
-                    </div>
-                </div>
-        	 </div>
-        	<div class="col-md-3 widget">
-        		<div class="r3_counter_box">
-                    <i class="pull-left fa fa-users dollar2 icon-rounded"></i>
-                    <div class="stats">
-                      <h5><strong>1450</strong></h5>
-                      <span>Total Users</span>
-                    </div>
-                </div>
-        	 </div>
-        	<div class="clearfix"> </div>
-		</div>
-		
-		<div class="row-one widgettable">
-			<div class="col-md-7 content-top-2 card">
-				<div class="agileinfo-cdr">
-					<div class="card-header">
-                        <h3>Weekly Sales</h3>
-                    </div>
-					
-						<div id="Linegraph" style="width: 98%; height: 350px">
-						</div>
-						
-				</div>
-			</div>
-			<div class="col-md-3 stat">
-				<div class="content-top-1">
-				<div class="col-md-6 top-content">
-					<h5>Sales</h5>
-					<label>1283+</label>
-				</div>
-				<div class="col-md-6 top-content1">	   
-					<div id="demo-pie-1" class="pie-title-center" data-percent="45"> <span class="pie-value"></span> </div>
-				</div>
-				 <div class="clearfix"> </div>
-				</div>
-				<div class="content-top-1">
-				<div class="col-md-6 top-content">
-					<h5>Reviews</h5>
-					<label>2262+</label>
-				</div>
-				<div class="col-md-6 top-content1">	   
-					<div id="demo-pie-2" class="pie-title-center" data-percent="75"> <span class="pie-value"></span> </div>
-				</div>
-				 <div class="clearfix"> </div>
-				</div>
-				<div class="content-top-1">
-				<div class="col-md-6 top-content">
-					<h5>Visitors</h5>
-					<label>12589+</label>
-				</div>
-				<div class="col-md-6 top-content1">	   
-					<div id="demo-pie-3" class="pie-title-center" data-percent="90"> <span class="pie-value"></span> </div>
-				</div>
-				 <div class="clearfix"> </div>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-				
-				<div class="charts">
-					<div class="col-md-4 charts-grids widget">
-						<div class="card-header">
-							<h3>Bar chart</h3>
-						</div>
-						
-						<div id="container" style="width: 100%; height:270px;">
-							<canvas id="canvas"></canvas>
-						</div>
-						<button id="randomizeData">Randomize Data</button>
-						<button id="addDataset">Add Dataset</button>
-						<button id="removeDataset">Remove Dataset</button>
-						<button id="addData">Add Data</button>
-						<button id="removeData">Remove Data</button>
-						
-					</div>
-					
-					<div class="col-md-4 charts-grids widget states-mdl">
-						<div class="card-header">
-							<h3>Column & Line Graph</h3>
-						</div>
-						<div id="chartdiv"></div>
-					</div>
-			
-					<div class="clearfix"> </div>
-				</div>
-				
-	
-	<!-- for amcharts js -->
-			<script src="js/amcharts.js"></script>
-			<script src="js/serial.js"></script>
-			<script src="js/export.min.js"></script>
-			<link rel="stylesheet" href="css/export.css" type="text/css" media="all" />
-			<script src="js/light.js"></script>
-	<!-- for amcharts js -->
-
-    <script  src="js/index1.js"></script>
-	
-		<div class="charts">		
-			<div class="mid-content-top charts-grids">
-				<div class="middle-content">
-						<h4 class="title">Carousel Slider</h4>
-					<!-- start content_slider -->
-					<div id="owl-demo" class="owl-carousel text-center">
-						<div class="item">
-							<img class="lazyOwl img-responsive" data-src="images/slider1.jpg" alt="name">
-						</div>
-						<div class="item">
-							<img class="lazyOwl img-responsive" data-src="images/slider2.jpg" alt="name">
-						</div>
-						<div class="item">
-							<img class="lazyOwl img-responsive" data-src="images/slider3.jpg" alt="name">
-						</div>
-						<div class="item">
-							<img class="lazyOwl img-responsive" data-src="images/slider4.jpg" alt="name">
-						</div>
-						<div class="item">
-							<img class="lazyOwl img-responsive" data-src="images/slider5.jpg" alt="name">
-						</div>
-						<div class="item">
-							<img class="lazyOwl img-responsive" data-src="images/slider6.jpg" alt="name">
-						</div>
-						<div class="item">
-							<img class="lazyOwl img-responsive" data-src="images/slider7.jpg" alt="name">
-						</div>
-						
-					</div>
-				</div>
-					<!--//sreen-gallery-cursual---->
-			</div>
-		</div>
-	</div>
-		
-	<!-- new added graphs chart js-->
-	
-    <script src="js/Chart.bundle.js"></script>
-    <script src="js/utils.js"></script>
-	
-	<script>
-        var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        var color = Chart.helpers.color;
-        var barChartData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [{
-                label: 'Dataset 1',
-                backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.red,
-                borderWidth: 1,
-                data: [
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor()
-                ]
-            }, {
-                label: 'Dataset 2',
-                backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.blue,
-                borderWidth: 1,
-                data: [
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor(),
-                    randomScalingFactor()
-                ]
-            }]
-
-        };
-
-        window.onload = function() {
-            var ctx = document.getElementById("canvas").getContext("2d");
-            window.myBar = new Chart(ctx, {
-                type: 'bar',
-                data: barChartData,
-                options: {
-                    responsive: true,
-                    legend: {
-                        position: 'top',
-                    },
-                    title: {
-                        display: true,
-                        text: 'Chart.js Bar Chart'
-                    }
-                }
-            });
-
-        };
-
-        document.getElementById('randomizeData').addEventListener('click', function() {
-            var zero = Math.random() < 0.2 ? true : false;
-            barChartData.datasets.forEach(function(dataset) {
-                dataset.data = dataset.data.map(function() {
-                    return zero ? 0.0 : randomScalingFactor();
-                });
-
-            });
-            window.myBar.update();
-        });
-
-        var colorNames = Object.keys(window.chartColors);
-        document.getElementById('addDataset').addEventListener('click', function() {
-            var colorName = colorNames[barChartData.datasets.length % colorNames.length];;
-            var dsColor = window.chartColors[colorName];
-            var newDataset = {
-                label: 'Dataset ' + barChartData.datasets.length,
-                backgroundColor: color(dsColor).alpha(0.5).rgbString(),
-                borderColor: dsColor,
-                borderWidth: 1,
-                data: []
-            };
-
-            for (var index = 0; index < barChartData.labels.length; ++index) {
-                newDataset.data.push(randomScalingFactor());
-            }
-
-            barChartData.datasets.push(newDataset);
-            window.myBar.update();
-        });
-
-        document.getElementById('addData').addEventListener('click', function() {
-            if (barChartData.datasets.length > 0) {
-                var month = MONTHS[barChartData.labels.length % MONTHS.length];
-                barChartData.labels.push(month);
-
-                for (var index = 0; index < barChartData.datasets.length; ++index) {
-                    //window.myBar.addData(randomScalingFactor(), index);
-                    barChartData.datasets[index].data.push(randomScalingFactor());
-                }
-
-                window.myBar.update();
-            }
-        });
-
-        document.getElementById('removeDataset').addEventListener('click', function() {
-            barChartData.datasets.splice(0, 1);
-            window.myBar.update();
-        });
-
-        document.getElementById('removeData').addEventListener('click', function() {
-            barChartData.labels.splice(-1, 1); // remove the label first
-
-            barChartData.datasets.forEach(function(dataset, datasetIndex) {
-                dataset.data.pop();
-            });
-
-            window.myBar.update();
-        });
-    </script>
-	<!-- new added graphs chart js-->
+            </div>
+        </div>
 	
 	<!-- Classie --><!-- for toggle left push menu script -->
 		<script src="js/classie.js"></script>
